@@ -1,0 +1,12 @@
+{
+  "items": [
+    { "name": "Elemento 1", "description": "Descripción del elemento 1" },
+    { "name": "Elemento 2", "description": "Descripción del elemento 2" },
+    { "name": "Elemento 3", "description": "Descripción del elemento 3" }
+  ],
+  "test-each-items": [
+    { "name": "Test each item 1 del index" },
+    { "name": "Test each item 2 del index" },
+    { "name": "Test each item 3 del index" }
+  ]
+}

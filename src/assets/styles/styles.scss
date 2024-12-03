@@ -1,0 +1,16 @@
+@use './base/header';
+
+@font-face {
+  font-family: 'Basier Square Regular';
+  src: url('../fonts/basiersquare-regular/BasierSquare-Regular.woff2') format('woff2'),
+       url('../fonts/basiersquare-regular/BasierSquare-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Basier Square Regular';
+  background-color: #f0f0f0;
+  color: #333;
+}
+  

@@ -1,0 +1,11 @@
+# Dependencias de node
+node_modules/
+
+# Archivos de compilación
+dist/
+
+# Mapas de fuente en producción
+*.map
+
+# Configuración del entorno
+.env
