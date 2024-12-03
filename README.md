@@ -17,23 +17,25 @@ Este proyecto es una **arquitectura base** para la creación de sitios web está
 
 El proyecto tiene la siguiente estructura de carpetas y archivos:
 
-src/ 
-├── assets/ 
-  ├── images/ # Imágenes estáticas 
-  ├── fonts/ # Fuentes 
-  └── styles/ 
-    ├── chunks/ # Archivos SCSS adicionales para fragmentos 
-        └── personalization-x.scss
-    └── main.scss # Estilos principales 
-├── data/ # Archivos JSON con datos para las plantillas 
-    ├── index.json
-    ├── about.json
-    └── \[...\].json
-├── views/ 
-│ └── pages/ # Plantillas Handlebars (HBS) para las páginas 
-└── index.js # Punto de entrada de la aplicación 
-├── webpack.config.js # Configuración de Webpack 
-├── package.json # Dependencias y scripts
+.
+└── src/ 
+    ├── assets/ 
+    │   ├── images/ # Imágenes estáticas 
+    │   ├── fonts/ # Fuentes 
+    │   └── styles/ 
+    │       ├── chunks/ # Archivos SCSS adicionales para fragmentos /
+    │       │   └── personalization-x.scss
+    │       └── main.scss # Estilos principales 
+    ├── data/ # Archivos JSON con datos para las plantillas /
+    │   ├── index.json
+    │   ├── about.json
+    │   └── ....json
+    ├── views/ 
+    │   ├── pages/ # Plantillas Handlebars (HBS) para las páginas 
+    │   └── partials/ # Parciales para las plantillas Handlebars (HBS)
+    ├── index.js # Punto de entrada de la aplicación 
+    ├── webpack.config.js # Configuración de Webpack 
+    └── package.json # Dependencias y scripts
 
 ## Requisitos
 
