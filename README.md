@@ -1,6 +1,6 @@
 # Frontend Web Architecture (HTML, Handlebars, SCSS, JavaScript)
 
-Este proyecto es una **arquitectura base** para la creación de sitios web estáticos utilizando tecnologías modernas como **HTML**, **Handlebars (HBS)**, **SCSS**, y **JavaScript**. Proporciona una estructura organizada para desarrollar rápidamente sitios web, con una configuración optimizada de Webpack para el manejo de plantillas, estilos y recursos.
+Este proyecto es una **arquitectura base** para la creación de sitios web estáticos utilizando tecnologías modernas como **HTML**, **Handlebars (HBS)**, **SCSS**, y **JavaScript**. Proporciona una estructura organizada para desarrollar rápidamente sitios web en desarrollo/local, con una configuración optimizada de Webpack para el manejo de plantillas, estilos y recursos.
 
 ## Características
 
@@ -25,18 +25,28 @@ El proyecto tiene la siguiente estructura de carpetas y archivos:
     │   ├── fonts/ # Fuentes 
     │   └── styles/ 
     │       ├── chunks/ # Archivos SCSS adicionales para fragmentos /
-    │       │   └── personalization-x.scss
+    │           ├── personalization-x.scss
+    │       │   └── [...].scss
     │       └── main.scss # Estilos principales 
     ├── data/ # Archivos JSON con datos para las plantillas /
     │   ├── index.json
     │   ├── about.json
-    │   └── ....json
+    │   └── [...].json
+    ├── js/ # Archivos JS /
+    │   ├── main.json
     ├── views/ 
     │   ├── pages/ # Plantillas Handlebars (HBS) para las páginas 
+    │       ├── index.hbs
+    │       ├── about.hbs
+    │       └── [...].hbs
     │   └── partials/ # Parciales para las plantillas Handlebars (HBS)
-    ├── index.js # Punto de entrada de la aplicación 
+    │       ├── header.hbs
+    │       ├── footer.hbs
+    │       └── [...].hbs
+    ├── config.js # Punto de entrada de la aplicación 
     ├── webpack.config.js # Configuración de Webpack 
     └── package.json # Dependencias y scripts
+```
 
 ## Requisitos
 
@@ -50,14 +60,17 @@ El proyecto tiene la siguiente estructura de carpetas y archivos:
    ```bash
    git clone https://github.com/tu-usuario/tu-repositorio.git
    cd tu-repositorio
+   ```
 
 2. Instala las dependencias necesarias:
-
+  ```bash
   npm install
+  ```
 
 3. Ejecuta el servidor de desarrollo:
-
+  ```bash
   npm run dev
+  ```
 
 4. Abre tu navegador en http://localhost:8080 para ver el proyecto en ejecución.
 

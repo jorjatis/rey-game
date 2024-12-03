@@ -6,8 +6,8 @@ const CopyWebpackPlugin  = require('copy-webpack-plugin');
 const styleChunksCacheGroups = require('./styleChunksCacheGroups.js');
 
 module.exports = {
-  devtool: 'source-map',
-  entry: './src/index.js', // Punto de entrada de tu aplicación
+  devtool: 'source-map', // Desactivar en produccion o si la build es lenta
+  entry: './src/config.js', // Punto de entrada de tu aplicación
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: '[name].js',
@@ -17,7 +17,7 @@ module.exports = {
   },
   module: {
     rules: [
-      // Manejo de archivos .hbs (Plantillas Handlebars)
+      // Manejo de archivos .hbs
       {
         test: /\.hbs$/,
         loader: 'handlebars-loader',
@@ -84,6 +84,7 @@ module.exports = {
       filename: 'assets/styles/[name].css', // Archivo CSS final
       chunkFilename: 'assets/styles/[name].css', // Archivo CSS final
     }),
+    // Meter imagenes en dist
     new CopyWebpackPlugin({
       patterns: [
         { 
@@ -91,7 +92,7 @@ module.exports = {
           to: path.join('assets', 'images')
         }
       ]
-    })
+    }),
   ],
   devServer: {
     static: path.resolve(__dirname, 'dist'), // Directorio desde donde servir los archivos
