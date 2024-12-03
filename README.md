@@ -17,6 +17,7 @@ Este proyecto es una **arquitectura base** para la creación de sitios web está
 
 El proyecto tiene la siguiente estructura de carpetas y archivos:
 
+```bash
 .
 └── src/ 
     ├── assets/ 
