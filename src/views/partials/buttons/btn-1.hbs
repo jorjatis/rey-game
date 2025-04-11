@@ -1,0 +1,27 @@
+{{#if isButton}}
+    <button class="v-gk-btn {{#if sizeS}}v-gk-btn--s{{/if}} {{#if isDisabled}}isDisabled{{/if}}">
+{{else if isLink}}
+    <a href="#">
+{{/if}}
+
+    {{#if text}}
+        <span>{{text}}</span>
+    {{else}}
+        <span>Texto del botón</span>
+    {{/if}}
+
+    {{#if icon}}
+        {{#if iconShare}}
+            <svg viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M19.537 6.773 11.395 0v4.064C4.862 4.064.537 10.246.537 16c1.58-4.46 4.92-6.5 10.857-6.5v4.044l8.143-6.771Z" fill="#fff"/></svg>
+        {{/if}}
+
+        {{#if iconReload}}
+            <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16.353 10.3a7 7 0 1 1-4.968-6.411" stroke="#fff"/><path d="m9.488 5.104 2.009-1.488-1.991-1.511" stroke="#fff"/></svg>
+        {{/if}}
+    {{/if}}
+
+{{#if isButton}}
+    </button>
+{{else if isLink}}
+    </a>
+{{/if}}

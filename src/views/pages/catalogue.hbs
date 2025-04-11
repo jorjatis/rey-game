@@ -1,0 +1,55 @@
+{{> base/head }}
+
+{{> utils/demo-styles }}
+
+  <div class="voc-wrapper" style="padding-top: 64px;">
+
+    {{!-- NOTE: Botones --}}
+    <div class="voc-container">
+        <h2 class="demo-title">Botones</h2>
+        <h3 class="demo-title demo-title--s">Boton 1</h3>
+        
+        <div class="voc-c-container">
+            <h3 class="demo-title demo-title--xs">Por defecto</h3>
+            {{> buttons/btn-1 
+                isButton=true
+                text="Empezar"
+            }}
+
+            <h3 class="demo-title demo-title--xs">Por defecto - Disabled</h3>
+            {{> buttons/btn-1 
+                isButton=true
+                isDisabled=true
+                text="Empezar"
+            }}
+
+            <h3 class="demo-title demo-title--xs">Pequeño</h3>
+            {{> buttons/btn-1 
+                isButton=true
+                sizeS=true
+                text="Entendido"
+            }}
+
+            <h3 class="demo-title demo-title--xs">Pequeño - Compartir resultado</h3>
+            {{> buttons/btn-1 
+                isButton=true
+                sizeS=true
+                text="Compartir resultado"
+                icon=true
+                iconShare=true
+            }}
+
+            <h3 class="demo-title demo-title--xs">Pequeño - Volver a jugar</h3>
+            {{> buttons/btn-1 
+                isButton=true
+                sizeS=true
+                text="Volver a jugar"
+                icon=true
+                iconReload=true
+            }}
+        </div>
+    </div>
+
+  </div>
+
+{{> base/footer }}
