@@ -1,36 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{title}}</title>
-</head>
-<body>
-  asdasd
-  {{> header}} <!-- Parcial del encabezado -->
-  <a href="/about.html">About</a>
-  <a href="/contact.html">Contacto</a>
-  <a href="/blog.html">Blog</a>
-  <a href="/cosas/cosa1.html">Cosa 1</a>
+{{> base/head }}
 
-  La imagen
-  <img src="assets/images/default.jpg" alt="Imagen de ejemplo">
+  <div class="voc-wrapper" style="padding-top: 64px;">
 
-  <img src="assets/images/icons/chapa.jpg" alt="Imagen de ejemplo">
+    <div class="voc-container">
 
-  <p>Listado:</p>
-  <ul>
-    {{#each items}}
-      <li>
-        <h2>{{name}}</h2>
-        <p>{{description}}</p>
-      </li>
-    {{/each}}
-  </ul>
+      <h2>Hola</h2>
 
-  <p>Listado test each items:</p>
-  {{> test-each }}
+    </div>
 
-  {{> footer}} <!-- Parcial del pie de página -->
-</body>
-</html>
+  </div>
+
+{{> base/footer }}
