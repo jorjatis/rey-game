@@ -1,15 +1,14 @@
 {{#> popover }}
 
     <div class="v-gk-modal__h">
-        <div class="v-gk-modal__x">
-            {{> btn
-                isButton=true
-                classes="v-gk-btn--x"
-                noText=true
-                icon=true
-                iconClose=true
-            }}
-        </div>
+        {{> btn
+            isButton=true
+            classes="v-gk-btn--x popover-close"
+            noText=true
+            icon=true
+            iconClose=true
+            others="popovertarget=\"howToPlay\" popovertargetaction=\"hide\""
+        }}
     </div>
 
     <div class="v-gk-modal__cnt">
@@ -23,7 +22,7 @@
         </ol>
 
         <div class="v-gk-modal__media">
-            <video autoplay loop>
+            <video autoplay loop muted playsinline>
                 <source src="assets/images/instrucciones.mp4" type="video/mp4">
                 Tu navegador no soporta el formato de video.
             </video>
@@ -38,8 +37,10 @@
         <div class="v-gk-btn-grp">
             {{> btn
                 isButton=true
-                isDisabled=true
-                text="Empezar"
+                classes="popover-close"
+                sizeS=true
+                text="Entendido"
+                others="popovertarget=\"howToPlay\" popovertargetaction=\"hide\""
             }}
         </div>
     </div>
