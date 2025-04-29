@@ -1,0 +1,76 @@
+<section class="v-gk-stgm">
+    <div class="v-gk-stgm__h">
+        {{> btn
+            isButton=true
+            isIcon=true
+            noText=true
+            icon=true
+            iconOptions=true
+        }}
+
+        {{> btn
+            isButton=true
+            typeLink=true
+            text="Cómo jugar" 
+        }}
+    </div>
+
+    <div class="v-gk-stgm__cnt">
+        <div class="v-gk-stgm__media">
+            <img src="assets/images/start-game.png" alt="">
+        </div>
+
+        <h1>¿Cuánto sabes de la historia reciente de España?</h1>
+
+        <p>Pulsa sobre los eventos históricos que irán apareciendo y arrástralos, antes o después de otro evento, hasta colocarlos en el orden cronológico correcto</p>
+
+        <div class="v-gk-lvl-sel">
+            <p>Selecciona un nivel de dificultad</p>
+            <div class="v-gk-lvl-sel__btns">
+                {{> btn
+                    isButton=true
+                    classes="v-gk-btn--lvl"
+                    btnSecondary=true
+                    sizeS=true
+                    text="Nivel 1"
+                    icon=true 
+                    iconLevel=true
+                    level1=true
+                }}
+
+                {{> btn
+                    isButton=true
+                    classes="v-gk-btn--lvl"
+                    btnSecondary=true
+                    sizeS=true
+                    text="Nivel 2"
+                    icon=true 
+                    iconLevel=true
+                    level2=true
+                }}
+
+                {{> btn
+                    isButton=true
+                    classes="v-gk-btn--lvl"
+                    btnSecondary=true
+                    sizeS=true
+                    text="Nivel 3"
+                    icon=true 
+                    iconLevel=true
+                    level3=true
+                }}
+            </div>
+        </div>
+    </div>
+
+    <div class="v-gk-stgm__ftr">
+        <div class="v-gk-btn-grp">
+            {{> btn
+                isButton=true
+                isDisabled=true
+                text="Empezar"
+            }}
+        </div>
+    </div>
+
+</section>

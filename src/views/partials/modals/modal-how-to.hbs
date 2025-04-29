@@ -1,0 +1,47 @@
+{{#> popover }}
+
+    <div class="v-gk-modal__h">
+        <div class="v-gk-modal__x">
+            {{> btn
+                isButton=true
+                classes="v-gk-btn--x"
+                noText=true
+                icon=true
+                iconClose=true
+            }}
+        </div>
+    </div>
+
+    <div class="v-gk-modal__cnt">
+        <h2>Cómo jugar</h2>
+
+        <p>El objetivo del juego consiste en colocar de manera cronológica los hitos históricos que irán apareciendo.</p>
+
+        <ol type="1">
+            <li><strong>Pulsa y arrastra</strong> cada nueva tarjeta y colócala por encima (más antiguo) o por debajo (más actual) de los hitos que estén ya colocados.</li>
+            <li>Suelta la tarjeta y <strong>confirma</strong> la posición que has elegido.</li>
+        </ol>
+
+        <div class="v-gk-modal__media">
+            <video autoplay loop>
+                <source src="assets/images/instrucciones.mp4" type="video/mp4">
+                Tu navegador no soporta el formato de video.
+            </video>
+        </div>
+
+        <p>Si la posición que has seleccionado es incorrecta, la tarjeta se colocará automáticamente a su orden correcto.</p>
+    </div>
+
+    <div class="v-gk-modal__ftr">
+        <p>¡Mucha suerte!</p>
+
+        <div class="v-gk-btn-grp">
+            {{> btn
+                isButton=true
+                isDisabled=true
+                text="Empezar"
+            }}
+        </div>
+    </div>
+
+{{/ popover}}

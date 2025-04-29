@@ -1,0 +1,100 @@
+@use '../base/global' as *;
+
+.v-gk-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  height: 45px;
+  padding: 0 45px;
+  font: 18px/21px $basr;
+  text-transform: uppercase;
+  color: $cb1;
+  border: 1px solid $cp1;
+  border-radius: 30px;
+  background: $cp1;
+  transition: opacity .2s;
+
+  &:hover {
+    opacity: .7;
+  }
+
+  &.is-disabled {
+    border-color: $cg1;
+    background: $cg1;
+    color: $cg2;
+    cursor: not-allowed;
+  
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+
+.v-gk-btn--sec {
+  color: $cb2;
+  background: $cb1;
+  transition: color .2s, background .2s;
+
+  &:hover {
+    color: $cb1;
+    background: $cp2;
+    opacity: 1;
+  }
+
+  &.is-active {
+    color: $cb1;
+    background: $cp2;
+  }
+}
+
+.v-gk-btn--s {
+  height: 30px;
+  padding: 0 16px;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.v-gk-btn--lnk {
+  height: 36px;
+  padding: 0 16px;
+  font-size: 12px;
+  line-height: 15px;
+  text-decoration: underline;
+  color: $cb2;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+}
+
+.v-gk-btn--icn {
+  height: auto;
+  padding: 0;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+}
+
+// Especificos
+.v-gk-btn--lvl {
+  padding: 0 12px;
+  font-size: 12px;
+  line-height: 15px;
+
+  .v-gk-icn {
+    height: 9px;
+  }
+}
+
+.v-gk-btn--x {
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  background: $cg4;
+  border: 0;
+  border-radius: 100%;
+
+  .v-gk-icn {
+    width: 100%;
+    height: auto;
+  }
+}

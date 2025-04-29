@@ -7,7 +7,10 @@ const styleChunksCacheGroups = require('./styleChunksCacheGroups.js');
 
 module.exports = {
   devtool: 'source-map', // Desactivar en produccion o si la build es lenta
-  entry: './src/config.js', // Punto de entrada de tu aplicación
+  entry: {
+    main: './src/js/main.js',
+    config: './src/config.js',
+  },
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: '[name].js',
@@ -77,6 +80,7 @@ module.exports = {
             return {}; // Retorna un objeto vacío si no hay datos
           }
         },
+        inject: 'body', // Asegura que el script se inserte en el body
       });
     }),
     // Extraer el CSS en un archivo separado

@@ -1,0 +1,44 @@
+@font-face {
+    font-family: 'Basier Square Regular';
+    src: url('../../fonts/basiersquare-regular/BasierSquare-Regular.eot');
+    src: url('../../fonts/basiersquare-regular/BasierSquare-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../../fonts/basiersquare-regular/BasierSquare-Regular.woff2') format('woff2'),
+        url('../../fonts/basiersquare-regular/BasierSquare-Regular.woff') format('woff'),
+        url('../../fonts/basiersquare-regular/BasierSquare-Regular.ttf') format('truetype'),
+        url('../../fonts/basiersquare-regular/BasierSquare-Regular.svg#BasierSquare-Regular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+$basr: 'Basier Square Regular', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+
+@font-face {
+    font-family: 'Basier Square Semibold';
+    src: url('../../fonts/basiersquare-semibold/BasierSquare-SemiBold.eot');
+    src: url('../../fonts/basiersquare-semibold/BasierSquare-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('../../fonts/basiersquare-semibold/BasierSquare-SemiBold.woff2') format('woff2'),
+        url('../../fonts/basiersquare-semibold/BasierSquare-SemiBold.woff') format('woff'),
+        url('../../fonts/basiersquare-semibold/BasierSquare-SemiBold.ttf') format('truetype'),
+        url('../../fonts/basiersquare-semibold/BasierSquare-SemiBold.svg#BasierSquare-SemiBold') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+$bass: 'Basier Square Semibold', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+
+@font-face {
+    font-family: 'ABCDisplay Semibold';
+    src: url('../../fonts/ABCDisplay-semibold/ABCDisplay-Sb.eot');
+    src: url('../../fonts/ABCDisplay-semibold/ABCDisplay-Sb.eot?#iefix') format('embedded-opentype'),
+        url('../../fonts/ABCDisplay-semibold/ABCDisplay-Sb.woff2') format('woff2'),
+        url('../../fonts/ABCDisplay-semibold/ABCDisplay-Sb.woff') format('woff'),
+        url('../../fonts/ABCDisplay-semibold/ABCDisplay-Sb.ttf') format('truetype'),
+        url('../../fonts/ABCDisplay-semibold/ABCDisplay-Sb.svg#ABCDisplay-Sb') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
+
+ $abcds: 'ABCDisplay Semibold', Georgia, Times New Roman, serif;

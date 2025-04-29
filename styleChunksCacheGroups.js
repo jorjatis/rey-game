@@ -16,6 +16,12 @@ function mapFilenamesToCacheGroups(options = {}) {
     extensions = ['scss'],
   } = options;
 
+  // Verificar si el directorio existe antes de proceder
+  if (!fs.existsSync(directory)) {
+    console.warn(`El directorio de chunks: "${directory}" no existe. No se generarán cacheGroups.`);
+    return {};
+  }
+
   try {
     // Leer archivos en el directorio especificado
     const files = fs.readdirSync(directory)

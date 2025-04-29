@@ -1,0 +1,9 @@
+{{#if openDialogBtn}}
+    <button class="v-gk-btn v-gk-btn--s" data-modal-target="{{dialogTarget}}">
+        <span>Mostrar modal {{#if dialogName}}{{dialogName}}{{/if}}</span>
+    </button>
+{{/if}}
+
+<dialog {{#if dialogId}}id="modal-{{dialogId}}"{{/if}} class="v-gk-modal {{#if classes}}{{classes}}{{/if}}" {{#if dialogOpen}}open{{/if}} {{#if dialogClosedBy}}closedby="any"{{/if}} data-modal>
+    {{> @partial-block }}
+</dialog>
