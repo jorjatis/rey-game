@@ -1,0 +1,117 @@
+<div class="v-gk-game">
+    <div class="v-gk-game__h">
+        {{> btn
+            isButton=true
+            typeLink=true
+            text="Cómo jugar" 
+        }}
+    </div>
+
+    <div class="v-gk-game__score-cnt">
+        <div class="v-gk-game__lvl-cnt">
+            <span class="v-gk-game__lvl">Nivel <span>1</span></span>
+            <span class="v-gk-icn">
+                {{> ./icons/icon-level 
+                    level1=true
+                }}
+            </span>
+        </div>
+
+        <div class="v-gk-game__score">
+            <div class="v-gk-game__round">Ronda <span class="v-gk-game__round-actual">1</span><span class="v-gk-game__round-sep">/</span><span class="v-gk-game__round-total">7</span></div>
+            <div class="v-gk-game__score-blocks">
+                <span class="wrong"></span>
+                <span class="ok"></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="v-gk-game__cnt">
+        <div class="v-gk-game__drag-zone">
+            <article class="v-gk-game__item">
+                <div class="v-gk-game__item-inner">
+                    <span class="v-gk-game__item-year">1990</span>
+                    <span class="v-gk-game__item-desc">Empiezan a emitir las televisiones privadas (Antena 3, Telecinco y Canal+)</span>
+                    <figure>
+                        <img src="https://placehold.co/68x68" alt="#">
+                    </figure>
+                </div>
+            </article>
+        </div>
+
+        <div class="v-gk-game__drop-zone">
+            <span class="v-gk-game__sign v-gk-game__sign-older">
+                Más antiguo
+            </span>
+
+            <article class="v-gk-game__item v-gk-game__item">
+                <div class="v-gk-game__item-inner">
+                    <span class="v-gk-game__item-year">1944</span>
+                    <span class="v-gk-game__item-desc">Accusantium, error libero! Veniam maiores animi autem totam.</span>
+                    <figure>
+                        <img src="https://placehold.co/68x68" alt="#">
+                    </figure>
+                </div>
+            </article>
+
+            <article class="v-gk-game__item v-gk-game__item wrong drag-before">
+                <div class="v-gk-game__item-inner">
+                    <span class="v-gk-game__item-year">1974</span>
+                    <span class="v-gk-game__item-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. A saepe laudantium doloremque quisquam voluptas distinctio?</span>
+                    <figure>
+                        <img src="https://placehold.co/68x68" alt="#">
+                    </figure>
+                </div>
+            </article>
+
+            <article class="v-gk-game__item v-gk-game__item ok">
+                <div class="v-gk-game__item-inner">
+                    <span class="v-gk-game__item-year">1974</span>
+                    <span class="v-gk-game__item-desc">Debitis dignissimos ducimus, ipsam provident quo soluta sed, eum temporibus labore commodi tempore culpa eligendi sit perferendis. </span>
+                    <figure>
+                        <img src="https://placehold.co/68x68" alt="#">
+                    </figure>
+                </div>
+            </article>
+
+            <article class="v-gk-game__item v-gk-game__item--mini">
+                <div class="v-gk-game__item-inner">
+                    <span class="v-gk-game__item-year">1983</span>
+                    <span class="v-gk-game__item-desc">Sed ipsa recusandae molestiae sint possimus. Laudantium nihil optio incidunt.</span>
+                    <figure>
+                        <img src="https://placehold.co/68x68" alt="#">
+                    </figure>
+                </div>
+            </article>
+
+            <article class="v-gk-game__item v-gk-game__item--mini wrong drag-after">
+                <div class="v-gk-game__item-inner">
+                    <span class="v-gk-game__item-year">1998</span>
+                    <span class="v-gk-game__item-desc">Aperiam maiores consectetur culpa magni consequuntur, sint nam!</span>
+                    <figure>
+                        <img src="https://placehold.co/68x68" alt="#">
+                    </figure>
+                </div>
+            </article>
+
+            <article class="v-gk-game__item v-gk-game__item--mini ok">
+                <div class="v-gk-game__item-inner">
+                    <span class="v-gk-game__item-year">2006</span>
+                    <span class="v-gk-game__item-desc">Architecto nemo minus dolor qui earum veritatis, eligendi minima recusandae incidunt.</span>
+                    <figure>
+                        <img src="https://placehold.co/68x68" alt="#">
+                    </figure>
+                </div>
+            </article>
+
+            <span class="v-gk-game__sign v-gk-game__sign-newer">
+                Más actual
+            </span>
+        </div>
+    </div>
+</div>

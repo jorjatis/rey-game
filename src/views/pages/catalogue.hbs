@@ -7,110 +7,211 @@
     {{!-- NOTE: Botones --}}
     <div class="voc-container">
         <h2 class="demo-title">Botones</h2>
-        
-        <div class="voc-c-container">
-            <h3 class="demo-title demo-title--xs">Por defecto</h3>
-            {{> btn
-                isButton=true
-                text="Empezar"
-            }}
+
+        <div class="voc-grid voc-grid--4-cols">
+
+            <div class="voc-grid__col">        
+                <div class="voc-c-container">
+                    <h3 class="demo-title demo-title--xs">Por defecto</h3>
+                    {{> btn
+                        isButton=true
+                        text="Empezar"
+                    }}
+                </div>
+
+                <div class="voc-c-container">
+                    <h3 class="demo-title demo-title--xs">Por defecto - Disabled</h3>
+                    {{> btn
+                        isButton=true
+                        isDisabled=true
+                        text="Empezar"
+                    }}
+                </div>
+            </div>
+
+            <div class="voc-grid__col">
+                <div class="voc-c-container">
+                    <h3 class="demo-title demo-title--xs">Pequeño</h3>
+                    {{> btn
+                        isButton=true
+                        sizeS=true
+                        text="Entendido"
+                    }}
+                </div>
+
+                <div class="voc-c-container">
+                    <h3 class="demo-title demo-title--xs">Pequeño - Compartir resultado</h3>
+                    {{> btn
+                        isButton=true
+                        sizeS=true
+                        text="Compartir resultado"
+                        icon=true
+                        iconShare=true
+                    }}
+                </div>
+
+                <div class="voc-c-container">
+                    <h3 class="demo-title demo-title--xs">Pequeño - Volver a jugar</h3>
+                    {{> btn
+                        isButton=true
+                        sizeS=true
+                        text="Volver a jugar"
+                        icon=true
+                        iconReload=true
+                    }}
+                </div> 
+            </div>
+
+            <div class="voc-grid__col">
+                <div class="voc-c-container">
+                    <h3 class="demo-title demo-title--xs">Cómo jugar - Tipo link</h3>
+                    {{> btn
+                        isButton=true
+                        typeLink=true
+                        text="Cómo jugar" 
+                    }}
+                </div>
+            </div>
+
+            <div class="voc-grid__col">
+                <div class="voc-c-container">
+                    <h3 class="demo-title demo-title--xs">Pequeño - Secondary - Seleccionar dificultad</h3>
+                    {{> btn
+                        isButton=true
+                        classes="v-gk-btn--lvl"
+                        btnSecondary=true
+                        sizeS=true
+                        text="Nivel 1"
+                        icon=true 
+                        iconLevel=true
+                        level1=true
+                    }}
+                </div>
+            </div>
         </div>
-
-        <div class="voc-c-container">
-            <h3 class="demo-title demo-title--xs">Por defecto - Disabled</h3>
-            {{> btn
-                isButton=true
-                isDisabled=true
-                text="Empezar"
-            }}
-        </div>
-
-        <div class="voc-c-container">
-            <h3 class="demo-title demo-title--xs">Pequeño</h3>
-            {{> btn
-                isButton=true
-                sizeS=true
-                text="Entendido"
-            }}
-        </div>
-
-        <div class="voc-c-container">
-            <h3 class="demo-title demo-title--xs">Pequeño - Compartir resultado</h3>
-            {{> btn
-                isButton=true
-                sizeS=true
-                text="Compartir resultado"
-                icon=true
-                iconShare=true
-            }}
-        </div>
-
-        <div class="voc-c-container">
-            <h3 class="demo-title demo-title--xs">Pequeño - Volver a jugar</h3>
-            {{> btn
-                isButton=true
-                sizeS=true
-                text="Volver a jugar"
-                icon=true
-                iconReload=true
-            }}
-        </div> 
-
-        <div class="voc-c-container">
-            <h3 class="demo-title demo-title--xs">Cómo jugar - Tipo link</h3>
-            {{> btn
-                isButton=true
-                typeLink=true
-                text="Cómo jugar" 
-            }}
-        </div>
-
-        <div class="voc-c-container">
-            <h3 class="demo-title demo-title--xs">Pequeño - Secondary - Seleccionar dificultad</h3>
-            {{> btn
-                isButton=true
-                classes="v-gk-btn--lvl"
-                btnSecondary=true
-                sizeS=true
-                text="Nivel 1"
-                icon=true 
-                iconLevel=true
-                level1=true
-            }}
-        </div>  
-    </div>
-
-    {{!-- NOTE: Botones --}}
-    <div class="voc-container">
-        <h2 class="demo-title">Intro del juego</h2>
-
-        {{> start-game }}
     </div>
 
     {{!-- NOTE: Modales --}}
     <div class="voc-container">
         <h2 class="demo-title">Modales</h2>
 
-        <div class="voc-c-container">
-            <h3 class="demo-title demo-title--xs">Modal de 'Cómo jugar'</h3>
-            
-            {{> modals/modal-how-to 
-                openPopoverBtn=true
-                popoverTarget="howToPlay"
-                popoverName="'Cómo jugar'"
-            }}
+        <div class="voc-grid voc-grid--4-cols">
+            <div class="voc-grid__col">
+                <div class="voc-c-container">
+                    <h3 class="demo-title demo-title--xs">Modal de 'Cómo jugar'</h3>
+                    
+                    {{> modals/modal-how-to 
+                        openPopoverBtn=true
+                        popoverTarget="howToPlay"
+                        popoverName="'Cómo jugar'"
+                    }}
+                </div>
+            </div>
+
+            <div class="voc-grid__col">
+                <div class="voc-c-container">
+                    <h3 class="demo-title demo-title--xs">Modal de resultado</h3>
+                    
+                    {{> modals/modal-game-result 
+                        openPopoverBtn=true
+                        popoverTarget="gameResult"
+                        popoverName="Ver resultados"
+                    }}
+                </div>
+            </div>
         </div>
 
-        <div class="voc-c-container">
-            <h3 class="demo-title demo-title--xs">Modal de resultado</h3>
-            
-            {{> modals/modal-game-result 
-                openPopoverBtn=true
-                popoverTarget="gameResult"
-                popoverName="Ver resultados"
-            }}
-        </div>
+    </div>
 
+    {{!-- NOTE: Pantallas --}}
+    <div class="voc-container">
+        <h2 class="demo-title">Pantallas</h2>
+
+        <h3 class="demo-title demo-title--xs">Menú del juego</h3>
+
+        {{> start-game }}
+
+        <div class="voc-grid voc-grid--3-cols">
+            <div class="voc-grid__col">
+                <div class="voc-c-container">
+                    <h3 class="demo-title demo-title--xs">Juego - Init </h3>
+
+                    {{> game }}
+                </div>
+            </div>
+
+            <div class="voc-grid__col">
+                <div class="voc-c-container">
+                    <h3 class="demo-title demo-title--xs">Juego - Dragging </h3>
+
+                    {{> game }}
+                </div>
+            </div>
+
+            <div class="voc-grid__col">
+                <div class="voc-c-container">
+                    <h3 class="demo-title demo-title--xs">Juego - Drop</h3>
+
+                    {{> game }}
+                </div>
+            </div>
+
+            <div class="voc-grid__col">
+                <div class="voc-c-container">
+                    <h3 class="demo-title demo-title--xs">Juego - Drop - Fallo</h3>
+
+                    {{> game }}
+                </div>
+            </div>
+
+            <div class="voc-grid__col">
+                <div class="voc-c-container">
+                    <h3 class="demo-title demo-title--xs">Juego - Drop - Correcto</h3>
+
+                    {{> game }}
+                </div>
+            </div>
+
+            <div class="voc-grid__col">
+                <div class="voc-c-container">
+                    <h3 class="demo-title demo-title--xs">Juego - Minificados</h3>
+
+                    {{> game }}
+                </div>
+            </div>
+
+            <div class="voc-grid__col">
+                <div class="voc-c-container">
+                    <h3 class="demo-title demo-title--xs">Juego - Dragging - Post 1ª vuelta</h3>
+
+                    {{> game }}
+                </div>
+            </div>
+
+            <div class="voc-grid__col">
+                <div class="voc-c-container">
+                    <h3 class="demo-title demo-title--xs">Juego - Drop - Post 1ª vuelta</h3>
+
+                    {{> game }}
+                </div>
+            </div>
+
+            <div class="voc-grid__col">
+                <div class="voc-c-container">
+                    <h3 class="demo-title demo-title--xs">Juego - Finalizado</h3>
+
+                    {{> game }}
+                </div>
+            </div>
+
+            <div class="voc-grid__col">
+                <div class="voc-c-container">
+                    <h3 class="demo-title demo-title--xs">Juego - Resultado</h3>
+
+                    {{> game }}
+                </div>
+            </div>
+        </div>
     </div>
 
   </div>

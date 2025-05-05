@@ -42,3 +42,18 @@ $bass: 'Basier Square Semibold', -apple-system, BlinkMacSystemFont, Roboto, Helv
   }
 
  $abcds: 'ABCDisplay Semibold', Georgia, Times New Roman, serif;
+
+ @font-face {
+    font-family: 'ABCText Light';
+    src: url('../../fonts/ABCText-light/ABCText-Lg.eot');
+    src: url('../../fonts/ABCText-light/ABCText-Lg.eot?#iefix') format('embedded-opentype'),
+        url('../../fonts/ABCText-light/ABCText-Lg.woff2') format('woff2'),
+        url('../../fonts/ABCText-light/ABCText-Lg.woff') format('woff'),
+        url('../../fonts/ABCText-light/ABCText-Lg.ttf') format('truetype'),
+        url('../../fonts/ABCText-light/ABCText-Lg.svg#ABCText-Lg') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+  }
+
+$abctl: 'ABCText Light', Georgia, Times New Roman, serif;

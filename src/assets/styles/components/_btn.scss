@@ -5,7 +5,7 @@
   align-items: center;
   justify-content: center;
   gap: 10px;
-  height: 45px;
+  min-height: 45px;
   padding: 0 45px;
   font: 18px/21px $basr;
   text-transform: uppercase;
@@ -49,14 +49,14 @@
 }
 
 .v-gk-btn--s {
-  height: 30px;
+  min-height: 30px;
   padding: 0 16px;
   font-size: 14px;
   line-height: 16px;
 }
 
 .v-gk-btn--lnk {
-  height: 36px;
+  min-height: 36px;
   padding: 0 16px;
   font-size: 12px;
   line-height: 15px;

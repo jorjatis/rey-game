@@ -1,6 +1,6 @@
 @use '../base/global' as *;
 
-.v-gk-stgm {
+.v-gk-menu-game {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -10,32 +10,38 @@
     border-radius: 8px;
     background: $cg3;
 
-    .v-gk-stgm__h {
+    .v-gk-menu-game__h {
         display: flex;
         align-items: center;
         justify-content: space-between;
         width: 100%;
         margin-bottom: 50px;
 
-        .v-gk-icn {
-            width: 24px;
-            height: 24px;
-            transition: .3s opacity;
-            cursor: pointer;
+        .v-gk-btn--icn {
+            .v-gk-icn {
+                width: 24px;
+                height: 24px;
+                transition: .3s opacity;
+                cursor: pointer;
 
-            &:hover {
-                opacity: .5;
+                &:hover {
+                    opacity: .5;
+                }
             }
+        }
+
+        .v-gk-btn--lnk {
+            padding: 0;
         }
     }
 
-    .v-gk-stgm__cnt {
+    .v-gk-menu-game__cnt {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
-    .v-gk-stgm__media {
+    .v-gk-menu-game__media {
         width: 175px;
         height: auto;
         margin-bottom: 32px;
@@ -69,7 +75,7 @@
         }
     }
 
-    .v-gk-stgm__ftr {
+    .v-gk-menu-game__ftr {
         margin-top: 56px;
     }
 
