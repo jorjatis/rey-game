@@ -24,7 +24,7 @@
         </ol>
 
         <div class="v-gk-modal__media">
-            <video autoplay loop>
+            <video autoplay loop muted playsinline>
                 <source src="assets/images/instrucciones.mp4" type="video/mp4">
                 Tu navegador no soporta el formato de video.
             </video>
@@ -39,8 +39,10 @@
         <div class="v-gk-btn-grp">
             {{> btn
                 isButton=true
-                isDisabled=true
-                text="Empezar"
+                classes="popover-close"
+                sizeS=true
+                text="Entendido"
+                others="popovertarget=\"howToPlay\" popovertargetaction=\"hide\""
             }}
         </div>
     </div>

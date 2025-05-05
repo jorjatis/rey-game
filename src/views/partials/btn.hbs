@@ -1,7 +1,7 @@
 {{#if isButton}}
     <button class="v-gk-btn {{#if isIcon}}v-gk-btn--icn{{/if}} {{#if sizeS}}v-gk-btn--s{{/if}} {{#if typeLink}}v-gk-btn--lnk{{/if}} {{#if btnSecondary}}v-gk-btn--sec{{/if}} {{#if isDisabled}}is-disabled{{/if}} {{#if classes}}{{classes}}{{/if}}" {{#if popover}}popovertarget="{{popoverTarget}}" popovertargetaction="toggle"{{/if}}>
 {{else if isLink}}
-    <a href="#" class="v-gk-btn {{#if sizeS}}v-gk-btn--s{{/if}} {{#if typeLink}}v-gk-btn--lnk{{/if}} {{#if btnSecondary}}v-gk-btn--sec{{/if}} {{#if isDisabled}}is-disabled{{/if}} {{#if classes}}{{classes}}{{/if}}"></a>
+    <a href="#" class="v-gk-btn {{#if sizeS}}v-gk-btn--s{{/if}} {{#if typeLink}}v-gk-btn--lnk{{/if}} {{#if btnSecondary}}v-gk-btn--sec{{/if}} {{#if isDisabled}}is-disabled{{/if}} {{#if classes}}{{classes}}{{/if}}" {{{others}}}></a>
 {{/if}}
 
     {{#if text}}
