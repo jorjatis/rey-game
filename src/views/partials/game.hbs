@@ -3,7 +3,9 @@
         {{> btn
             isButton=true
             typeLink=true
-            text="Cómo jugar" 
+            text="Cómo jugar"
+            popover=true
+            popoverTarget="howToPlay"
         }}
     </div>
 
@@ -20,8 +22,8 @@
         <div class="v-gk-game__score">
             <div class="v-gk-game__round">Ronda <span class="v-gk-game__round-actual">1</span><span class="v-gk-game__round-sep">/</span><span class="v-gk-game__round-total">7</span></div>
             <div class="v-gk-game__score-blocks">
-                <span class="wrong"></span>
-                <span class="ok"></span>
+                <span class="wrong">{{> icons/icon-wrong}}</span>
+                <span class="ok">{{> icons/icon-ok}}</span>
                 <span></span>
                 <span></span>
                 <span></span>

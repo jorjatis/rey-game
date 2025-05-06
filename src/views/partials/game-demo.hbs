@@ -1,0 +1,424 @@
+<div class="v-gk-game">
+    <div class="v-gk-game__h">
+        {{> btn
+            isButton=true
+            typeLink=true
+            text="Cómo jugar"
+            popover=true
+            popoverTarget="howToPlay"
+        }}
+    </div>
+
+    <div class="v-gk-game__score-cnt">
+        <div class="v-gk-game__lvl-cnt">
+            <span class="v-gk-game__lvl">Nivel <span>1</span></span>
+            <span class="v-gk-icn">
+                {{> ./icons/icon-level 
+                    level1=true
+                }}
+            </span>
+        </div>
+
+        <div class="v-gk-game__score">
+            <div class="v-gk-game__round">Ronda <span class="v-gk-game__round-actual">1</span><span class="v-gk-game__round-sep">/</span><span class="v-gk-game__round-total">7</span></div>
+            <div class="v-gk-game__score-blocks">
+                <span class="wrong">{{> icons/icon-wrong }}</span>
+                <span class="ok">{{> icons/icon-ok }}</span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="v-gk-game__cnt">
+        <div class="v-gk-game__drag-zone">
+            {{#if itemInDragZone}}
+                <article class="v-gk-game__item v-gk-game__item--drag">
+                    <div class="v-gk-game__item-inner">
+                        <span class="v-gk-game__item-year">1990</span>
+                        <span class="v-gk-game__item-desc">Empiezan a emitir las televisiones privadas (Antena 3, Telecinco y Canal+)</span>
+                        <figure>
+                            <img src="https://placehold.co/68x68" alt="#">
+                        </figure>
+                    </div>
+                </article>
+            {{/if}}
+        </div>
+
+        <div class="v-gk-game__drop-zone">
+            <span class="v-gk-game__sign v-gk-game__sign-older">
+                Más antiguo
+            </span>
+
+            {{#if demo1}}
+            <article class="v-gk-game__item">
+                <div class="v-gk-game__item-inner">
+                    <span class="v-gk-game__item-year">1944</span>
+                    <span class="v-gk-game__item-desc">Accusantium, error libero! Veniam maiores animi autem totam.</span>
+                    <figure>
+                        <img src="https://placehold.co/68x68" alt="#">
+                    </figure>
+                </div>
+            </article>
+            {{/if}}
+
+            {{#if demo2}}
+            <article class="v-gk-game__item drag-after">
+                <div class="v-gk-game__item-inner">
+                    <span class="v-gk-game__item-year">1944</span>
+                    <span class="v-gk-game__item-desc">Accusantium, error libero! Veniam maiores animi autem totam.</span>
+                    <figure>
+                        <img src="https://placehold.co/68x68" alt="#">
+                    </figure>
+                </div>
+            </article>
+            {{/if}}
+
+            {{#if demo3}}
+            <article class="v-gk-game__item">
+                <div class="v-gk-game__item-inner">
+                    <span class="v-gk-game__item-year">1944</span>
+                    <span class="v-gk-game__item-desc">Accusantium, error libero! Veniam maiores animi autem totam.</span>
+                    <figure>
+                        <img src="https://placehold.co/68x68" alt="#">
+                    </figure>
+                </div>
+            </article>
+
+            <article class="v-gk-game__item v-gk-game__item--drag is-dropped">
+                <div class="v-gk-game__item-inner">
+                    <span class="v-gk-game__item-year">1944</span>
+                    <span class="v-gk-game__item-desc">Accusantium, error libero! Veniam maiores animi autem totam.</span>
+                    <figure>
+                        <img src="https://placehold.co/68x68" alt="#">
+                    </figure>
+
+                    {{> btn
+                        isButton=true
+                        btnSecondary=true
+                        sizeXS=true
+                        text="Confirmar"
+                    }}
+                </div>
+            </article>
+            {{/if}}
+
+            {{#if demo4}}
+            <article class="v-gk-game__item">
+                <div class="v-gk-game__item-inner">
+                    <span class="v-gk-game__item-year">1944</span>
+                    <span class="v-gk-game__item-desc">Accusantium, error libero! Veniam maiores animi autem totam.</span>
+                    <figure>
+                        <img src="https://placehold.co/68x68" alt="#">
+                    </figure>
+                </div>
+            </article>
+
+            <article class="v-gk-game__item wrong">
+                <div class="v-gk-game__item-inner">
+                    <span class="v-gk-game__item-year">1974</span>
+                    <span class="v-gk-game__item-desc">Debitis dignissimos ducimus, ipsam provident quo soluta sed, eum temporibus.</span>
+                    <figure>
+                        <img src="https://placehold.co/68x68" alt="#">
+                    </figure>
+                </div>
+            </article>
+            {{/if}}
+
+            {{#if demo5}}
+            <article class="v-gk-game__item ok">
+                <div class="v-gk-game__item-inner">
+                    <span class="v-gk-game__item-year">1974</span>
+                    <span class="v-gk-game__item-desc">Debitis dignissimos ducimus, ipsam provident quo soluta sed, eum temporibus.</span>
+                    <figure>
+                        <img src="https://placehold.co/68x68" alt="#">
+                    </figure>
+                </div>
+            </article>
+
+            <article class="v-gk-game__item">
+                <div class="v-gk-game__item-inner">
+                    <span class="v-gk-game__item-year">1944</span>
+                    <span class="v-gk-game__item-desc">Accusantium, error libero! Veniam maiores animi autem totam.</span>
+                    <figure>
+                        <img src="https://placehold.co/68x68" alt="#">
+                    </figure>
+                </div>
+            </article>
+            {{/if}}
+
+            {{#if demo6}}
+            <article class="v-gk-game__item v-gk-game__item--mini ok">
+                <div class="v-gk-game__item-inner">
+                    <span class="v-gk-game__item-year">1974</span>
+                    <span class="v-gk-game__item-desc">Debitis dignissimos ducimus, ipsam provident quo soluta sed, eum temporibus.</span>
+                    <figure>
+                        <img src="https://placehold.co/68x68" alt="#">
+                    </figure>
+                </div>
+            </article>
+
+            <article class="v-gk-game__item v-gk-game__item--mini">
+                <div class="v-gk-game__item-inner">
+                    <span class="v-gk-game__item-year">1944</span>
+                    <span class="v-gk-game__item-desc">Accusantium, error libero! Veniam maiores animi autem totam.</span>
+                    <figure>
+                        <img src="https://placehold.co/68x68" alt="#">
+                    </figure>
+                </div>
+            </article>
+
+            <article class="v-gk-game__item v-gk-game__item--mini wrong">
+                <div class="v-gk-game__item-inner">
+                    <span class="v-gk-game__item-year">1974</span>
+                    <span class="v-gk-game__item-desc">Debitis dignissimos ducimus, ipsam provident quo soluta sed, eum temporibus.</span>
+                    <figure>
+                        <img src="https://placehold.co/68x68" alt="#">
+                    </figure>
+                </div>
+            </article>
+            {{/if}}
+
+            {{#if demo7}}
+            <article class="v-gk-game__item v-gk-game__item--mini ok drag-before">
+                <div class="v-gk-game__item-inner">
+                    <span class="v-gk-game__item-year">1974</span>
+                    <span class="v-gk-game__item-desc">Debitis dignissimos ducimus, ipsam provident quo soluta sed, eum temporibus.</span>
+                    <figure>
+                        <img src="https://placehold.co/68x68" alt="#">
+                    </figure>
+                </div>
+            </article>
+
+            <article class="v-gk-game__item v-gk-game__item--mini">
+                <div class="v-gk-game__item-inner">
+                    <span class="v-gk-game__item-year">1944</span>
+                    <span class="v-gk-game__item-desc">Accusantium, error libero! Veniam maiores animi autem totam.</span>
+                    <figure>
+                        <img src="https://placehold.co/68x68" alt="#">
+                    </figure>
+                </div>
+            </article>
+
+            <article class="v-gk-game__item v-gk-game__item--mini wrong">
+                <div class="v-gk-game__item-inner">
+                    <span class="v-gk-game__item-year">1974</span>
+                    <span class="v-gk-game__item-desc">Debitis dignissimos ducimus, ipsam provident quo soluta sed, eum temporibus.</span>
+                    <figure>
+                        <img src="https://placehold.co/68x68" alt="#">
+                    </figure>
+                </div>
+            </article>
+            {{/if}}
+
+            {{#if demo8}}
+            <article class="v-gk-game__item v-gk-game__item--drag is-dropped">
+                <div class="v-gk-game__item-inner">
+                    <span class="v-gk-game__item-year">1944</span>
+                    <span class="v-gk-game__item-desc">Accusantium, error libero! Veniam maiores animi autem totam.</span>
+                    <figure>
+                        <img src="https://placehold.co/68x68" alt="#">
+                    </figure>
+
+                    {{> btn
+                        isButton=true
+                        btnSecondary=true
+                        sizeXS=true
+                        text="Confirmar"
+                    }}
+                </div>
+            </article>
+
+            <article class="v-gk-game__item ok">
+                <div class="v-gk-game__item-inner">
+                    <span class="v-gk-game__item-year">1974</span>
+                    <span class="v-gk-game__item-desc">Debitis dignissimos ducimus, ipsam provident quo soluta sed, eum temporibus.</span>
+                    <figure>
+                        <img src="https://placehold.co/68x68" alt="#">
+                    </figure>
+                </div>
+            </article>
+
+            <article class="v-gk-game__item v-gk-game__item--mini">
+                <div class="v-gk-game__item-inner">
+                    <span class="v-gk-game__item-year">1944</span>
+                    <span class="v-gk-game__item-desc">Accusantium, error libero! Veniam maiores animi autem totam.</span>
+                    <figure>
+                        <img src="https://placehold.co/68x68" alt="#">
+                    </figure>
+                </div>
+            </article>
+
+            <article class="v-gk-game__item v-gk-game__item--mini wrong">
+                <div class="v-gk-game__item-inner">
+                    <span class="v-gk-game__item-year">1974</span>
+                    <span class="v-gk-game__item-desc">Debitis dignissimos ducimus, ipsam provident quo soluta sed, eum temporibus.</span>
+                    <figure>
+                        <img src="https://placehold.co/68x68" alt="#">
+                    </figure>
+                </div>
+            </article>
+            {{/if}}
+
+            {{#if demo9}}
+            <article class="v-gk-game__item v-gk-game__item--mini ok drag-after">
+                <div class="v-gk-game__item-inner">
+                    <span class="v-gk-game__item-year">1974</span>
+                    <span class="v-gk-game__item-desc">Debitis dignissimos ducimus, ipsam provident quo soluta sed, eum temporibus.</span>
+                    <figure>
+                        <img src="https://placehold.co/68x68" alt="#">
+                    </figure>
+                </div>
+            </article>
+
+            <article class="v-gk-game__item v-gk-game__item--mini drag-before">
+                <div class="v-gk-game__item-inner">
+                    <span class="v-gk-game__item-year">1944</span>
+                    <span class="v-gk-game__item-desc">Accusantium, error libero! Veniam maiores animi autem totam.</span>
+                    <figure>
+                        <img src="https://placehold.co/68x68" alt="#">
+                    </figure>
+                </div>
+            </article>
+
+            <article class="v-gk-game__item v-gk-game__item--mini wrong">
+                <div class="v-gk-game__item-inner">
+                    <span class="v-gk-game__item-year">1974</span>
+                    <span class="v-gk-game__item-desc">Debitis dignissimos ducimus, ipsam provident quo soluta sed, eum temporibus.</span>
+                    <figure>
+                        <img src="https://placehold.co/68x68" alt="#">
+                    </figure>
+                </div>
+            </article>
+            {{/if}}
+
+            {{#if demo10}}
+            <article class="v-gk-game__item ok">
+                <div class="v-gk-game__item-inner">
+                    <span class="v-gk-game__item-year">1974</span>
+                    <span class="v-gk-game__item-desc">Debitis dignissimos ducimus, ipsam provident quo soluta sed, eum temporibus.</span>
+                    <figure>
+                        <img src="https://placehold.co/68x68" alt="#">
+                    </figure>
+                </div>
+            </article>
+
+            <article class="v-gk-game__item v-gk-game__item--drag is-dropped">
+                <div class="v-gk-game__item-inner">
+                    <span class="v-gk-game__item-year">1944</span>
+                    <span class="v-gk-game__item-desc">Accusantium, error libero! Veniam maiores animi autem totam.</span>
+                    <figure>
+                        <img src="https://placehold.co/68x68" alt="#">
+                    </figure>
+
+                    {{> btn
+                        isButton=true
+                        btnSecondary=true
+                        sizeXS=true
+                        text="Confirmar"
+                    }}
+                </div>
+            </article>
+
+            <article class="v-gk-game__item">
+                <div class="v-gk-game__item-inner">
+                    <span class="v-gk-game__item-year">1944</span>
+                    <span class="v-gk-game__item-desc">Accusantium, error libero! Veniam maiores animi autem totam.</span>
+                    <figure>
+                        <img src="https://placehold.co/68x68" alt="#">
+                    </figure>
+                </div>
+            </article>
+
+            <article class="v-gk-game__item v-gk-game__item--mini wrong">
+                <div class="v-gk-game__item-inner">
+                    <span class="v-gk-game__item-year">1974</span>
+                    <span class="v-gk-game__item-desc">Debitis dignissimos ducimus, ipsam provident quo soluta sed, eum temporibus.</span>
+                    <figure>
+                        <img src="https://placehold.co/68x68" alt="#">
+                    </figure>
+                </div>
+            </article>
+            {{/if}}
+
+            {{#if demo11}}
+            <article class="v-gk-game__item v-gk-game__item--mini ok">
+                <div class="v-gk-game__item-inner">
+                    <span class="v-gk-game__item-year">1912</span>
+                    <span class="v-gk-game__item-desc">Debitis dignissimos ducimus, ipsam provident quo soluta sed, eum temporibus.</span>
+                    <figure>
+                        <img src="https://placehold.co/68x68" alt="#">
+                    </figure>
+                </div>
+            </article>
+
+            <article class="v-gk-game__item v-gk-game__item--mini ok">
+                <div class="v-gk-game__item-inner">
+                    <span class="v-gk-game__item-year">1922</span>
+                    <span class="v-gk-game__item-desc">Debitis dignissimos ducimus, ipsam provident quo soluta sed, eum temporibus.</span>
+                    <figure>
+                        <img src="https://placehold.co/68x68" alt="#">
+                    </figure>
+                </div>
+            </article>
+
+            <article class="v-gk-game__item v-gk-game__item--mini wrong">
+                <div class="v-gk-game__item-inner">
+                    <span class="v-gk-game__item-year">1930</span>
+                    <span class="v-gk-game__item-desc">Debitis dignissimos ducimus, ipsam provident quo soluta sed, eum temporibus.</span>
+                    <figure>
+                        <img src="https://placehold.co/68x68" alt="#">
+                    </figure>
+                </div>
+            </article>
+
+            <article class="v-gk-game__item v-gk-game__item--mini ok">
+                <div class="v-gk-game__item-inner">
+                    <span class="v-gk-game__item-year">1932</span>
+                    <span class="v-gk-game__item-desc">Debitis dignissimos ducimus, ipsam provident quo soluta sed, eum temporibus.</span>
+                    <figure>
+                        <img src="https://placehold.co/68x68" alt="#">
+                    </figure>
+                </div>
+            </article>
+
+            <article class="v-gk-game__item v-gk-game__item--mini">
+                <div class="v-gk-game__item-inner">
+                    <span class="v-gk-game__item-year">1944</span>
+                    <span class="v-gk-game__item-desc">Accusantium, error libero! Veniam maiores animi autem totam.</span>
+                    <figure>
+                        <img src="https://placehold.co/68x68" alt="#">
+                    </figure>
+                </div>
+            </article>
+
+            <article class="v-gk-game__item v-gk-game__item--mini wrong">
+                <div class="v-gk-game__item-inner">
+                    <span class="v-gk-game__item-year">1974</span>
+                    <span class="v-gk-game__item-desc">Debitis dignissimos ducimus, ipsam provident quo soluta sed, eum temporibus.</span>
+                    <figure>
+                        <img src="https://placehold.co/68x68" alt="#">
+                    </figure>
+                </div>
+            </article>
+
+            <article class="v-gk-game__item v-gk-game__item--mini ok">
+                <div class="v-gk-game__item-inner">
+                    <span class="v-gk-game__item-year">1992</span>
+                    <span class="v-gk-game__item-desc">Debitis dignissimos ducimus, ipsam provident quo soluta sed, eum temporibus.</span>
+                    <figure>
+                        <img src="https://placehold.co/68x68" alt="#">
+                    </figure>
+                </div>
+            </article>
+            {{/if}}
+
+            <span class="v-gk-game__sign v-gk-game__sign-newer">
+                Más actual
+            </span>
+        </div>
+    </div>
+</div>

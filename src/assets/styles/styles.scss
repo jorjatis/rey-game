@@ -10,3 +10,8 @@
 
 @use './modules/menu-game';
 @use './modules/game';
+
+.v-gk-cnt {
+    display: flex;
+    justify-content: center;
+}

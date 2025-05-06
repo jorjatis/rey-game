@@ -11,13 +11,15 @@
         {{> btn
             isButton=true
             typeLink=true
-            text="Cómo jugar" 
+            text="Cómo jugar"
+            popover=true
+            popoverTarget="howToPlay"
         }}
     </div>
 
     <div class="v-gk-menu-game__cnt">
         <div class="v-gk-menu-game__media">
-            <img src="assets/images/start-game.png" alt="">
+            <img src="assets/images/menu-game.png" alt="">
         </div>
 
         <h1>¿Cuánto sabes de la historia reciente de España?</h1>
@@ -36,6 +38,8 @@
                     icon=true 
                     iconLevel=true
                     level1=true
+                    dataAttr="level"
+                    dataAttrContent="1"
                 }}
 
                 {{> btn
@@ -47,6 +51,8 @@
                     icon=true 
                     iconLevel=true
                     level2=true
+                    dataAttr="level"
+                    dataAttrContent="2"
                 }}
 
                 {{> btn
@@ -58,6 +64,8 @@
                     icon=true 
                     iconLevel=true
                     level3=true
+                    dataAttr="level"
+                    dataAttrContent="3"
                 }}
             </div>
         </div>
@@ -69,6 +77,7 @@
                 isButton=true
                 isDisabled=true
                 text="Empezar"
+                id="startGameBtn"
             }}
         </div>
     </div>

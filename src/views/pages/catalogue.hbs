@@ -129,22 +129,28 @@
 
         <h3 class="demo-title demo-title--xs">Menú del juego</h3>
 
-        {{> start-game }}
+        {{> menu-game }}
 
         <div class="voc-grid voc-grid--3-cols">
             <div class="voc-grid__col">
                 <div class="voc-c-container">
-                    <h3 class="demo-title demo-title--xs">Juego - Init </h3>
+                    <h3 class="demo-title demo-title--xs">Juego - Init</h3>
 
-                    {{> game }}
+                    {{> game-demo
+                        itemInDragZone=true
+                        demo1=true
+                    }}
                 </div>
             </div>
 
             <div class="voc-grid__col">
                 <div class="voc-c-container">
-                    <h3 class="demo-title demo-title--xs">Juego - Dragging </h3>
+                    <h3 class="demo-title demo-title--xs">Juego - Dragging</h3>
 
-                    {{> game }}
+                    {{> game-demo 
+                        itemInDragZone=true
+                        demo2=true
+                    }}
                 </div>
             </div>
 
@@ -152,7 +158,9 @@
                 <div class="voc-c-container">
                     <h3 class="demo-title demo-title--xs">Juego - Drop</h3>
 
-                    {{> game }}
+                    {{> game-demo 
+                        demo3=true
+                    }}
                 </div>
             </div>
 
@@ -160,7 +168,9 @@
                 <div class="voc-c-container">
                     <h3 class="demo-title demo-title--xs">Juego - Drop - Fallo</h3>
 
-                    {{> game }}
+                    {{> game-demo 
+                        demo4=true
+                    }}
                 </div>
             </div>
 
@@ -168,7 +178,9 @@
                 <div class="voc-c-container">
                     <h3 class="demo-title demo-title--xs">Juego - Drop - Correcto</h3>
 
-                    {{> game }}
+                    {{> game-demo 
+                        demo5=true
+                    }}
                 </div>
             </div>
 
@@ -176,7 +188,10 @@
                 <div class="voc-c-container">
                     <h3 class="demo-title demo-title--xs">Juego - Minificados</h3>
 
-                    {{> game }}
+                    {{> game-demo 
+                        itemInDragZone=true
+                        demo6=true
+                    }}
                 </div>
             </div>
 
@@ -184,7 +199,10 @@
                 <div class="voc-c-container">
                     <h3 class="demo-title demo-title--xs">Juego - Dragging - Post 1ª vuelta</h3>
 
-                    {{> game }}
+                    {{> game-demo 
+                        itemInDragZone=true
+                        demo7=true
+                    }}
                 </div>
             </div>
 
@@ -192,7 +210,30 @@
                 <div class="voc-c-container">
                     <h3 class="demo-title demo-title--xs">Juego - Drop - Post 1ª vuelta</h3>
 
-                    {{> game }}
+                    {{> game-demo 
+                        demo8=true
+                    }}
+                </div>
+            </div>
+
+            <div class="voc-grid__col">
+                <div class="voc-c-container">
+                    <h3 class="demo-title demo-title--xs">Juego - Drag entre 2</h3>
+
+                    {{> game-demo 
+                        itemInDragZone=true
+                        demo9=true
+                    }}
+                </div>
+            </div>
+
+            <div class="voc-grid__col">
+                <div class="voc-c-container">
+                    <h3 class="demo-title demo-title--xs">Juego - Drop entre 2</h3>
+
+                    {{> game-demo 
+                        demo10=true
+                    }}
                 </div>
             </div>
 
@@ -200,15 +241,9 @@
                 <div class="voc-c-container">
                     <h3 class="demo-title demo-title--xs">Juego - Finalizado</h3>
 
-                    {{> game }}
-                </div>
-            </div>
-
-            <div class="voc-grid__col">
-                <div class="voc-c-container">
-                    <h3 class="demo-title demo-title--xs">Juego - Resultado</h3>
-
-                    {{> game }}
+                    {{> game-demo 
+                        demo11=true
+                    }}
                 </div>
             </div>
         </div>

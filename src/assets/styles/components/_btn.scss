@@ -55,6 +55,13 @@
   line-height: 16px;
 }
 
+.v-gk-btn--xs {
+  min-height: 24px;
+  padding: 0 16px;
+  font-size: 12px;
+  line-height: 14px;
+}
+
 .v-gk-btn--lnk {
   min-height: 36px;
   padding: 0 16px;
@@ -89,6 +96,7 @@
 .v-gk-btn--x {
   width: 40px;
   height: 40px;
+  min-height: 40px;
   padding: 0;
   background: $cg4;
   border: 0;

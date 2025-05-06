@@ -1,13 +1,24 @@
 {{> base/head }}
 
-  <div class="voc-wrapper" style="padding-top: 64px;">
+  {{> demo/abc-header }}
+
+  <div class="voc-wrapper">
 
     <div class="voc-container">
 
-      
+      <div class="v-gk-cnt">
+        {{> menu-game }}
+      </div>
+
+       {{> modals/modal-how-to 
+          popoverTarget="howToPlay"
+          popoverName="'Cómo jugar'"
+        }}
 
     </div>
 
   </div>
 
-{{> base/footer }}
+{{> base/footer 
+    abcJS=true
+}}
